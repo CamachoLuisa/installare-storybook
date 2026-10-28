@@ -1,0 +1,38 @@
+/* usare un box sizing con padding e bordo */
+
+*,
+* ::before,
+* ::after {
+    box-sizing:  border-box;
+
+}
+
+/* rimuovere il margine predefinito dei nostri elementi*/
+
+* {
+    margin: 0;
+}
+
+/**/
+
+body {
+    line-height: 1.25;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* cambiare display di default dei media in block */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:where(*) {
+    font: inherit;
+    color: inherit;
+}
+
